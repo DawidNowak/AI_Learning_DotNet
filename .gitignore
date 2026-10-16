@@ -1,0 +1,59 @@
+# Local development settings / secrets (any casing, any project depth)
+appsettings.development.json
+appsettings.Development.json
+appsettings.*.local.json
+appsettings.local.json
+secrets.json
+*.env
+.env
+.env.*
+launchSettings.json.user
+
+# Build output
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+publish/
+artifacts/
+
+# Visual Studio / Rider / VS Code
+.vs/
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
+*.rsuser
+
+# Test results & coverage
+[Tt]est[Rr]esult*/
+*.trx
+coverage/
+coverage*.json
+coverage*.xml
+*.coverage
+*.coveragexml
+TestResults/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+project.lock.json
+
+# Logs & diagnostics
+*.log
+logs/
+*.binlog
+
+# Publish profiles with credentials
+*.pubxml
+*.pubxml.user
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
