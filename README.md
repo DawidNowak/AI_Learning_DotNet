@@ -16,6 +16,32 @@ Projects are grouped by course week:
 |------|-------------|
 | `Week_1/01_Maze` | Week 1, exercise 1: Maze |
 
+## Installing the .NET (C#) Jupyter Kernel
+
+Some projects include Jupyter notebooks (`.ipynb`) that run on the **.NET (C#)** kernel. To make the kernel available in VS Code's Jupyter extension on Windows:
+
+1. Install the .NET Interactive tool, if you don't have it yet:
+
+   ```powershell
+   dotnet tool install -g Microsoft.dotnet-interactive
+   ```
+
+2. Create the Jupyter kernels folder:
+
+   ```powershell
+   New-Item -ItemType Directory -Force -Path "$env:APPDATA\jupyter\kernels"
+   ```
+
+3. Register the .NET kernels with Jupyter:
+
+   ```powershell
+   dotnet interactive jupyter install
+   ```
+
+4. Restart VS Code, so the Jupyter extension picks up the new kernel.
+
+After that, open a notebook in VS Code and pick the **.NET (C#)** kernel.
+
 ## Tech Stack
 
 - .NET / C#
